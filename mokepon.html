@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mokepon!</title>
+        <link rel="shortcut icon" href="./android-chrome-512x512.png" type="image/x-icon">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <section id="seleccionar-mokepon-jugador">
+            <h1 class="titulo">Mokepon!</h1>
+            
+            <h2 class="subtitulo">Elige tu mascota:</h2>
+            
+            <div class="tarjetas">
+                <input type="radio" name="mascota" id="hipodoge" />
+                <label class="tarjeta-mokepon" for="hipodoge" tabindex="0">
+                    <p>Hipodoge</p>
+                    <img src="./imagenes/hipodoge-removebg-preview.png" alt="Hipodoge">
+                </label>
+                
+                <input type="radio" name="mascota" id="capipepo" />
+                <label class="tarjeta-mokepon" for="capipepo" tabindex="0">
+                    <p>Capipepo</p>
+                    <img src="./imagenes/Gemini_Generated_Image_4im6sx4im6sx4im6-removebg-preview.png" alt="Capipepo">
+                </label>
+                
+                <input type="radio" name="mascota" id="ratigueya" />
+                <label class="tarjeta-mokepon" for="ratigueya" tabindex="0">
+                    <p>Ratigueya</p>
+                    <img src="./imagenes/ratugueya.png" alt="Ratigueya">
+                </label>
+            </div>
+            
+            
+            <button id="seleccionar-mascota">continuar</button>
+        </section>
+        
+        <section id="seleccionar-ataque">
+            <h1 class="titulo">Mokepon!</h1>
+            
+            <h2 class="subtitulo">Elige tu ataque:</h2>
+            
+            <div>
+                <button id="boton-fuego" disabled class="boton-ataque">Fuego🔥</button>
+                <button id="boton-agua" disabled class="boton-ataque">agua🌊</button>
+                <button id="boton-tierra" disabled class="boton-ataque">Tierra🌎</button>
+            </div>
+            
+            <div id="mensajes">
+                <p id="resultado">mucha suerte bro!</p>
+                
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">reiniciar</button>
+                </section>
+            </div>
+            
+            <div class="ataques">
+                <div>
+                    <p id="vidas-jugador">3</p>
+                    <p id="mascota-jugador">tu</p>
+                    <div id="ataques-del-jugador"></div>
+                </div>
+                
+                <div>
+                    <p id="vidas-enemigo">3</p>
+                    <p id="mascota-enemigo">el</p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+            </div>
+        </section>
+        <script src="./js/mokepon.js" defer></script>
+    </body 
+</html> 
