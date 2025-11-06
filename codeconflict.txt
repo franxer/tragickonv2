@@ -1,3 +1,5 @@
 hola desde el archivo conflictivo!!!
 
+hola bro desde la rama de mibro
+
 cambios desde la rama main brooo !!!
